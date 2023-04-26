@@ -1,0 +1,83 @@
+body{
+  background-color: #FFFAFA;
+  margin: 20px;
+  font-family:  Times, serif, Inter;
+}
+
+.MyName{
+  text-align: center;
+}
+
+.textButton{
+  color: #999696;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.textButton:hover,
+.textButton:active
+{
+  color: #b75b5b;
+}
+
+
+.btnSpace{
+  padding-top: 50px;
+}
+
+.icons{
+  display: flex;
+  color: #454545;
+  justify-content:center;
+}
+
+.contacts-icon{
+  padding-right:10px;
+}
+
+.headerButtons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.aboutMe{
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutMePic{
+  width: 30%;
+  margin-left: 50px;
+}
+
+.aboutMeInfo{
+  width: 100%;
+  margin: 0 50px;
+}
+
+.paintings{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 20px;
+  align-items:center;
+  justify-content: space-evenly;
+  margin: 100px;
+}
+
+.painting-image {
+  flex: 2 1 100%;  
+  margin: 30px 10px;
+  max-height: 350px;
+  display: block;
+}
