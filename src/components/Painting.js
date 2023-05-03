@@ -1,7 +1,23 @@
+
+import { useState } from 'react';
+
 export default function Painting(props) {
-    return (
+    const [isHovered, setIsHovered] = useState(false);
+
+    const toggleHover = () => {
+        setIsHovered(!isHovered);
+    };
+        
+  return (
         <div className="painting">
-            <img src={`../../images/${props.item.name}`} className="painting-image" />
+            <img 
+                src={isHovered ? `../../images/${props.item.photoName}` : `../../images/${props.item.paintingName}`}
+                alt={props.item.text}
+                onMouseEnter={toggleHover}
+                onMouseLeave={toggleHover}
+                className="painting-image" 
+            />
+
         </div>
     )
 }

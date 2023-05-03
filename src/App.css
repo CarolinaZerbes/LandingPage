@@ -81,3 +81,10 @@ body{
   max-height: 350px;
   display: block;
 }
+
+
+@media(max-width: 850px){
+  .paintings{
+    flex-direction: column;
+  }
+}
